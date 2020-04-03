@@ -1481,8 +1481,8 @@
         <translation>per kilobyte</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then "per kilobyte" only pays 250 satoshis in fee, while "total at least" pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den egendefinerte avgiften er satt til 1000 satoshis og transaksjonen bare er 250 bytes, da vil "per kilobyte" bare betale 250 satoshis i gebyr, mens "minstebeløp" betaler 1000 satoshis. For transaksjoner større enn en kilobyte vil begge betale for antall kilobyte.</translation>
+        <source>If the custom fee is set to 1000 lifetiparoshis and the transaction is only 250 bytes, then "per kilobyte" only pays 250 lifetiparoshis in fee, while "total at least" pays 1000 lifetiparoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den egendefinerte avgiften er satt til 1000 lifetiparoshis og transaksjonen bare er 250 bytes, da vil "per kilobyte" bare betale 250 lifetiparoshis i gebyr, mens "minstebeløp" betaler 1000 lifetiparoshis. For transaksjoner større enn en kilobyte vil begge betale for antall kilobyte.</translation>
     </message>
     <message>
         <source>Hide</source>

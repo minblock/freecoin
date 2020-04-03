@@ -1000,7 +1000,7 @@ bool AppInitParameterInteraction()
     // If you are mining, be careful setting this:
     // if you set it to zero then
     // a transaction spammer can cheaply fill blocks using
-    // 1-satoshi-fee transactions. It should be set above the real
+    // 1-lifetiparoshi-fee transactions. It should be set above the real
     // cost to you of processing a transaction.
     if (IsArgSet("-minrelaytxfee"))
     {

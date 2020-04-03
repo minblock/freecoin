@@ -105,8 +105,8 @@ def rpc_port(n):
 def check_json_precision():
     """Make sure json library being used does not lose precision converting BTC values"""
     n = Decimal("20000000.00000003")
-    satoshis = int(json.loads(json.dumps(float(n)))*1.0e8)
-    if satoshis != 2000000000000003:
+    lifetiparoshis = int(json.loads(json.dumps(float(n)))*1.0e8)
+    if lifetiparoshis != 2000000000000003:
         raise RuntimeError("JSON encode/decode loses precision")
 
 def count_bytes(hex_string):
@@ -616,7 +616,7 @@ def assert_array_result(object_array, to_match, expected, should_not_find = Fals
     if num_matched > 0 and should_not_find == True:
         raise AssertionError("Objects were found %s"%(str(to_match)))
 
-def satoshi_round(amount):
+def lifetiparoshi_round(amount):
     return Decimal(amount).quantize(Decimal('0.00000001'), rounding=ROUND_DOWN)
 
 # Helper to create at least "count" utxos
@@ -635,8 +635,8 @@ def create_confirmed_utxos(fee, node, count):
         inputs.append({ "txid" : t["txid"], "vout" : t["vout"]})
         outputs = {}
         send_value = t['amount'] - fee
-        outputs[addr1] = satoshi_round(send_value/2)
-        outputs[addr2] = satoshi_round(send_value/2)
+        outputs[addr1] = lifetiparoshi_round(send_value/2)
+        outputs[addr2] = lifetiparoshi_round(send_value/2)
         raw_tx = node.createrawtransaction(inputs, outputs)
         signed_tx = node.signrawtransaction(raw_tx)["hex"]
         txid = node.sendrawtransaction(signed_tx)
@@ -686,7 +686,7 @@ def create_lots_of_big_transactions(node, txouts, utxos, num, fee):
         inputs=[{ "txid" : t["txid"], "vout" : t["vout"]}]
         outputs = {}
         change = t['amount'] - fee
-        outputs[addr] = satoshi_round(change)
+        outputs[addr] = lifetiparoshi_round(change)
         rawtx = node.createrawtransaction(inputs, outputs)
         newtx = rawtx[0:92]
         newtx = newtx + txouts
