@@ -1,26 +1,26 @@
-Litecoin Core integration/staging tree
+Freecoin Core integration/staging tree
 =====================================
 
 [![Build Status](https://travis-ci.org/freecoin-project/freecoin.svg?branch=master)](https://travis-ci.org/freecoin-project/freecoin)
 
 https://freecoin.org
 
-What is Litecoin?
+What is Freecoin?
 ----------------
 
-Litecoin is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. Litecoin uses peer-to-peer technology to operate
+Freecoin is an experimental digital currency that enables instant payments to
+anyone, anywhere in the world. Freecoin uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Litecoin Core is the name of open source
+out collectively by the network. Freecoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Litecoin Core software, see [https://freecoin.org](https://freecoin.org).
+the Freecoin Core software, see [https://freecoin.org](https://freecoin.org).
 
 License
 -------
 
-Litecoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Freecoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
@@ -28,7 +28,7 @@ Development Process
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. [Tags](https://github.com/freecoin-project/freecoin/tags) are created
-regularly to indicate new official, stable release versions of Litecoin Core.
+regularly to indicate new official, stable release versions of Freecoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -70,7 +70,7 @@ Translations
 ------------
 
 We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to Litecoin periodically.
+Translations are converted to Freecoin periodically.
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.

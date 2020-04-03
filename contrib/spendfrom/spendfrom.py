@@ -38,9 +38,9 @@ def check_json_precision():
 def determine_db_dir():
     """Return the default location of the freecoin data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/Litecoin/")
+        return os.path.expanduser("~/Library/Application Support/Freecoin/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "Litecoin")
+        return os.path.join(os.environ['APPDATA'], "Freecoin")
     return os.path.expanduser("~/.freecoin")
 
 def read_bitcoin_config(dbdir):

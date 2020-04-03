@@ -24,7 +24,7 @@ In case you want to build the disk image with `make deploy` (.dmg / optional), y
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build Litecoin Core
+Build Freecoin Core
 ------------------------
 
 1. Clone the freecoin source code and cd into `freecoin`
@@ -53,19 +53,19 @@ Build Litecoin Core
 Running
 -------
 
-Litecoin Core is now available at `./src/freecoind`
+Freecoin Core is now available at `./src/freecoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=freecoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Litecoin/freecoin.conf"
+    echo -e "rpcuser=freecoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Freecoin/freecoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Litecoin/freecoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Freecoin/freecoin.conf"
 
 The first time you run freecoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/Litecoin/debug.log
+    tail -f $HOME/Library/Application\ Support/Freecoin/debug.log
 
 Other commands:
 -------

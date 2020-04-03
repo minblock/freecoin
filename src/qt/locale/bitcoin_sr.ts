@@ -130,7 +130,7 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Litecoin address</source>
+        <source>Send coins to a Freecoin address</source>
         <translation>Пошаљите новац на freecoin адресу</translation>
     </message>
     <message>
