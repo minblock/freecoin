@@ -103,7 +103,7 @@ its maximum size, the transaction that (along with in-mempool descendants) has
 the lowest total feerate (as a package) will be evicted and the node's effective
 minimum relay feerate will be increased to match this feerate plus the initial
 minimum relay feerate. The initial minimum relay feerate is set to
-1000 lifetiparoshis per kB.
+1000 satoshis per kB.
 
 Freecoin Core 0.13.2 also introduces new default policy limits on the length and
 size of unconfirmed transaction chains that are allowed in the mempool
@@ -224,14 +224,14 @@ with `-txconfirmtarget=<m>` (default: `2`).
 
 Sometimes, it is not possible to give good estimates, or an estimate
 at all. Therefore, a fallback value can be set with `-fallbackfee=<f>`
-(default: `0.0002` LTC/kB).
+(default: `0.0002` FTC/kB).
 
 At all times, Freecoin Core will cap fees at `-maxtxfee=<x>` (default:
-0.10) LTC.
+0.10) FTC.
 Furthermore, Freecoin Core will never create transactions paying less than
 the current minimum relay fee.
 Finally, a user can set the minimum fee rate for all transactions with
-`-mintxfee=<i>`, which defaults to 1000 lifetiparoshis per kB.
+`-mintxfee=<i>`, which defaults to 1000 satoshis per kB.
 
 Wallet: Negative confirmations and conflict detection
 -----------------------------------------------------

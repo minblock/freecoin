@@ -1,5 +1,5 @@
-Freecoin Core 0.14.2
-=====================
+Freecoin Core
+=============
 
 Intro
 -----
